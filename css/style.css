@@ -1,62 +1,69 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif; 
 }
 
-/* Container */
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Adjust spacing between sections */
-    padding: 10px; /* Adjust padding around the container */
+    gap: 10px; 
+    padding: 10px; 
 }
 
-/* Sections */
+
 .box {
     position: relative;
-    border: 1px solid black;
-    padding: 20px; /* Adjust padding inside sections */
-    color: #fff; /* Text color inside sections */
-    background-color: #ccc; /* Background color of sections */
-    flex: 1; /* Flex grow to fill available space */
+    border: 1px solid black; 
+    padding: 40px 20px;
+    color: #fff;
+    background-color: #ccc;
+    flex: 1; 
+   
+    font-size: 16px; 
 }
 
-/* Section Titles */
+
 .title {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #444; /* Background color of section titles */
-    color: #fff; /* Text color of section titles */
-    padding: 5px;
+    background-color: #444; 
+    color: #fff; 
+    padding: 5px 10px;
     border: 1px solid black;
+   
+    font-size: 20px;
 }
 
-/* Responsive Design */
+
 @media (min-width: 992px) {
     .box {
-        flex: 1;
-        margin: 0 10px;
+        width: calc(33.333% - 20px); 
     }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
     .box {
-        flex: 1;
-        margin: 0 10px;
+        width: calc(50% - 10px); 
     }
 
     .box-3 {
-        width: 100%;
+        width: 100%; 
     }
 }
 
 @media (max-width: 767px) {
     .box {
-        width: 100%;
-        margin: 0 0 10px 0; /* Margin bottom for spacing between rows */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
 }
 
+
+h1 {
+    font-size: 75px; 
+}
